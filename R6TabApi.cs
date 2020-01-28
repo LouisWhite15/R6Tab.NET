@@ -16,7 +16,7 @@ namespace R6Tab.NET
             _httpClient.BaseAddress = new Uri(Constants.API_BASE_URL);
         }
 
-        public async Task<NameResults> GetPlayerWithNameAndPlatform(string playerName, Platform platform)
+        public async Task<NameResults> GetPlayerByNameAndPlatform(string playerName, Platform platform)
         {
             var requestUrl = Constants.API_URL_SEARCH + "?platform=" + platform.ToString().ToLower() + "&search=" + playerName;
 
@@ -27,6 +27,19 @@ namespace R6Tab.NET
             var content = await response.Content.ReadAsStringAsync();
 
             return JsonConvert.DeserializeObject<NameResults>(content);
+        }
+
+        public async Task<PlayerDataResults> GetPlayerById(Guid playerId)
+        {
+            var requestUrl = Constants.API_URL_PLAYER + "?p_id=" + playerId.ToString();
+
+            var response = await _httpClient.GetAsync(requestUrl);
+
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<PlayerDataResults>(content);
         }
     }
 }
