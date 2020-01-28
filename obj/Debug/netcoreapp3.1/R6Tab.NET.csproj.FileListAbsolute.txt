@@ -1,0 +1,11 @@
+/Users/louiswhite/Documents/Repos/R6Tab.NET/bin/Debug/netcoreapp3.1/R6Tab.NET.deps.json
+/Users/louiswhite/Documents/Repos/R6Tab.NET/bin/Debug/netcoreapp3.1/R6Tab.NET.dll
+/Users/louiswhite/Documents/Repos/R6Tab.NET/bin/Debug/netcoreapp3.1/R6Tab.NET.pdb
+/Users/louiswhite/Documents/Repos/R6Tab.NET/bin/Debug/netcoreapp3.1/System.Net.Http.Formatting.dll
+/Users/louiswhite/Documents/Repos/R6Tab.NET/bin/Debug/netcoreapp3.1/System.Net.Http.Formatting.xml
+/Users/louiswhite/Documents/Repos/R6Tab.NET/obj/Debug/netcoreapp3.1/R6Tab.NET.csprojAssemblyReference.cache
+/Users/louiswhite/Documents/Repos/R6Tab.NET/obj/Debug/netcoreapp3.1/R6Tab.NET.AssemblyInfoInputs.cache
+/Users/louiswhite/Documents/Repos/R6Tab.NET/obj/Debug/netcoreapp3.1/R6Tab.NET.AssemblyInfo.cs
+/Users/louiswhite/Documents/Repos/R6Tab.NET/obj/Debug/netcoreapp3.1/R6Tab.NET.csproj.CopyComplete
+/Users/louiswhite/Documents/Repos/R6Tab.NET/obj/Debug/netcoreapp3.1/R6Tab.NET.dll
+/Users/louiswhite/Documents/Repos/R6Tab.NET/obj/Debug/netcoreapp3.1/R6Tab.NET.pdb
