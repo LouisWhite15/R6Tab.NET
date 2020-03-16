@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace R6Tab.NET.Models
 {
-    public class NameResults
+    public class SearchResults
     {
         [JsonProperty("results")]
         public PlayerResults[] PlayerResults { get; set; }
