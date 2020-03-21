@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using Newtonsoft.Json;
 
 namespace R6Tab.NET.Models
@@ -12,151 +12,306 @@ namespace R6Tab.NET.Models
         public Social Social { get; set; }
 
         [JsonProperty("matches")]
-        public List<Match> Matches { get; set; }
+        public Match[] Matches { get; set; }
 
         [JsonProperty("graph_NA_mmr_get")]
-        public string Graph_Na_Mmr { get; set; }
+        public string GraphNaMmr { get; set; }
 
         [JsonProperty("graph_EU_mmr_get")]
-        public string Graph_Eu_Mmr { get; set; }
+        public string GraphEuMmr { get; set; }
 
         [JsonProperty("graph_AS_mmr_get")]
-        public string Graph_As_Mmr { get; set; }
+        public string GraphAsMmr { get; set; }
 
         [JsonProperty("graph_casualkds_get")]
-        public string Graph_Casualkds { get; set; }
+        public string GraphCasualkds { get; set; }
 
         [JsonProperty("graph_rankedkds_get")]
-        public string Graph_Rankedkds { get; set; }
+        public string GraphRankedkds { get; set; }
 
         [JsonProperty("p_id")]
-        public string PlayerId { get; set; }
+        public Guid PlayerId { get; set; }
 
         [JsonProperty("p_name")]
         public string PlayerName { get; set; }
 
         [JsonProperty("p_user")]
-        public string UserId { get; set; }
+        public Guid UserId { get; set; }
 
         [JsonProperty("p_level")]
-        public string PlayerLevel { get; set; }
+        public long PlayerLevel { get; set; }
 
         [JsonProperty("p_platform")]
         public string PlayerPlatform { get; set; }
 
         [JsonProperty("p_pvtrank")]
-        public string PlayerPvtRank { get; set; }
+        public long PlayerPvtrank { get; set; }
 
         [JsonProperty("utime")]
-        public string UTime { get; set; }
+        public long Utime { get; set; }
 
         [JsonProperty("kd")]
-        public string Kd { get; set; }
+        public long Kd { get; set; }
 
         [JsonProperty("p_data")]
         public string PlayerData { get; set; }
 
         [JsonProperty("p_visitors")]
-        public string PlayerVisitors { get; set; }
+        public long PlayerVisitors { get; set; }
 
         [JsonProperty("p_currentrank")]
-        public string PlayerCurrentRank { get; set; }
+        public long PlayerCurrentRank { get; set; }
 
         [JsonProperty("p_currentmmr")]
-        public string PlayerCurrentMmr { get; set; }
+        public long PlayerCurrentMmr { get; set; }
 
         [JsonProperty("p_maxrank")]
-        public string PlayerMaxRank { get; set; }
+        public long PlayerMaxRank { get; set; }
 
         [JsonProperty("p_maxmmr")]
-        public string PlayerMaxMmr { get; set; }
+        public long PlayerMaxMmr { get; set; }
 
-        public string p_skillrating { get; set; }
-        public string thunt { get; set; }
-        public string p_headshotacc { get; set; }
-        public string p_NA_currentmmr { get; set; }
-        public string p_NA_rank { get; set; }
-        public string p_EU_currentmmr { get; set; }
-        public string p_EU_rank { get; set; }
-        public string p_AS_currentmmr { get; set; }
-        public string p_AS_rank { get; set; }
-        public string season6 { get; set; }
-        public string season7 { get; set; }
-        public string season8 { get; set; }
-        public string season9 { get; set; }
-        public string season10 { get; set; }
-        public string season11 { get; set; }
-        public string season12 { get; set; }
-        public string faceit_id { get; set; }
-        public string faceit_user { get; set; }
-        public string faceit_elo { get; set; }
-        public string faceit_level { get; set; }
-        public string faceit_region { get; set; }
-        public string faceit_country { get; set; }
-        public string faceit_avatar { get; set; }
-        public string esl_id { get; set; }
-        public string social_twitter { get; set; }
-        public string social_instagram { get; set; }
-        public string social_twitch { get; set; }
-        public string social_youtube { get; set; }
-        public string operators { get; set; }
-        public string weapons { get; set; }
-        public string laststats { get; set; }
-        public string allstats { get; set; }
-        public string utime_stats { get; set; }
-        public string season11rank { get; set; }
-        public string season10rank { get; set; }
-        public string season9rank { get; set; }
-        public string season8rank { get; set; }
-        public string season7rank { get; set; }
-        public string season6rank { get; set; }
-        public string season11mmr { get; set; }
-        public string season10mmr { get; set; }
-        public string season9mmr { get; set; }
-        public string season8mmr { get; set; }
-        public string season7mmr { get; set; }
-        public string season6mmr { get; set; }
-        public string updatedon { get; set; }
-        public string btnav { get; set; }
-        public string favattacker { get; set; }
-        public string favdefender { get; set; }
-        public string banreason { get; set; }
+        [JsonProperty("p_skillrating")]
+        public long PlayerSkillRating { get; set; }
+
+        [JsonProperty("thunt")]
+        public string Thunt { get; set; }
+
+        [JsonProperty("p_headshotacc")]
+        public long PlayerHeadshotAccuracy { get; set; }
+
+        [JsonProperty("p_NA_currentmmr")]
+        public long PlayerNaCurrentMmr { get; set; }
+
+        [JsonProperty("p_NA_rank")]
+        public long PlayerNaRank { get; set; }
+
+        [JsonProperty("p_EU_currentmmr")]
+        public long PlayerEuCurrentMmr { get; set; }
+
+        [JsonProperty("p_EU_rank")]
+        public long PlayerEuRank { get; set; }
+
+        [JsonProperty("p_AS_currentmmr")]
+        public long PlayerAsCurrentMmr { get; set; }
+
+        [JsonProperty("p_AS_rank")]
+        public long PlayerAsRank { get; set; }
+
+        [JsonProperty("season6")]
+        public string Season6 { get; set; }
+
+        [JsonProperty("season7")]
+        public string Season7 { get; set; }
+
+        [JsonProperty("season8")]
+        public string Season8 { get; set; }
+
+        [JsonProperty("season9")]
+        public string Season9 { get; set; }
+
+        [JsonProperty("season10")]
+        public string Season10 { get; set; }
+
+        [JsonProperty("season11")]
+        public string Season11 { get; set; }
+
+        [JsonProperty("season12")]
+        public string Season12 { get; set; }
+
+        [JsonProperty("faceit_id")]
+        public string FaceitId { get; set; }
+
+        [JsonProperty("faceit_user")]
+        public string FaceitUser { get; set; }
+
+        [JsonProperty("faceit_elo")]
+        public long FaceitElo { get; set; }
+
+        [JsonProperty("faceit_level")]
+        public long FaceitLevel { get; set; }
+
+        [JsonProperty("faceit_region")]
+        public string FaceitRegion { get; set; }
+
+        [JsonProperty("faceit_country")]
+        public string FaceitCountry { get; set; }
+
+        [JsonProperty("faceit_avatar")]
+        public string FaceitAvatar { get; set; }
+
+        [JsonProperty("esl_id")]
+        public string EslId { get; set; }
+
+        [JsonProperty("social_twitter")]
+        public string SocialTwitter { get; set; }
+
+        [JsonProperty("social_instagram")]
+        public string SocialInstagram { get; set; }
+
+        [JsonProperty("social_twitch")]
+        public string SocialTwitch { get; set; }
+
+        [JsonProperty("social_youtube")]
+        public Uri SocialYoutube { get; set; }
+
+        [JsonProperty("operators")]
+        public string Operators { get; set; }
+
+        [JsonProperty("weapons")]
+        public string Weapons { get; set; }
+
+        [JsonProperty("laststats")]
+        public string LastStats { get; set; }
+
+        [JsonProperty("allstats")]
+        public string AllStats { get; set; }
+
+        [JsonProperty("utime_stats")]
+        public long UtimeStats { get; set; }
+
+        [JsonProperty("season11rank")]
+        public long Season11Rank { get; set; }
+
+        [JsonProperty("season10rank")]
+        public long Season10Rank { get; set; }
+
+        [JsonProperty("season9rank")]
+        public long Season9Rank { get; set; }
+
+        [JsonProperty("season8rank")]
+        public long Season8Rank { get; set; }
+
+        [JsonProperty("season7rank")]
+        public long Season7Rank { get; set; }
+
+        [JsonProperty("season6rank")]
+        public long Season6Rank { get; set; }
+
+        [JsonProperty("season11mmr")]
+        public long Season11Mmr { get; set; }
+
+        [JsonProperty("season10mmr")]
+        public long Season10Mmr { get; set; }
+
+        [JsonProperty("season9mmr")]
+        public long Season9Mmr { get; set; }
+
+        [JsonProperty("season8mmr")]
+        public long Season8Mmr { get; set; }
+
+        [JsonProperty("season7mmr")]
+        public long Season7Mmr { get; set; }
+
+        [JsonProperty("season6mmr")]
+        public long Season6Mmr { get; set; }
+
+        [JsonProperty("updatedon")]
+        public string UpdatedOn { get; set; }
+
+        [JsonProperty("btnav")]
+        public bool BtNav { get; set; }
+
+        [JsonProperty("favattacker")]
+        public string FavAttacker { get; set; }
+
+        [JsonProperty("favdefender")]
+        public string FavDefender { get; set; }
+
+        [JsonProperty("banreason")]
+        public string BanReason { get; set; }
     }
 
-    public class Social
+    public partial class Match
     {
-        public string twitter { get; set; }
-        public string instagram { get; set; }
-        public string twitch { get; set; }
-        public string youtube { get; set; }
-        public string bio { get; set; }
-        public string esl { get; set; }
-        public string discord { get; set; }
-        public string background { get; set; }
-        public string aliases { get; set; }
-        public string embed { get; set; }
+        [JsonProperty("ranked_wlstatus")]
+        public string RankedWlStatus { get; set; }
+
+        [JsonProperty("ranked_winslost")]
+        public string RankedWinsLost { get; set; }
+
+        [JsonProperty("ranked_datatime")]
+        public string RankedDataTime { get; set; }
+
+        [JsonProperty("next")]
+        public string Next { get; set; }
+
+        [JsonProperty("db_p_total_casualwins")]
+        public long DbPTotalCasualWins { get; set; }
+
+        [JsonProperty("db_p_total_casuallosses")]
+        public long DbPTotalCasualLosses { get; set; }
+
+        [JsonProperty("db_p_total_casualkills")]
+        public long DbPTotalCasualKills { get; set; }
+
+        [JsonProperty("db_p_total_casualdeaths")]
+        public long DbPTotalCasualDeaths { get; set; }
+
+        [JsonProperty("db_p_total_rankedwins")]
+        public long DbPTotalRankedWins { get; set; }
+
+        [JsonProperty("db_p_total_rankedlosses")]
+        public long DbPTotalRankedLosses { get; set; }
+
+        [JsonProperty("db_p_total_rankedkills")]
+        public long DbPTotalRankedKills { get; set; }
+
+        [JsonProperty("db_p_total_rankeddeaths")]
+        public long DbPTotalRankedDeaths { get; set; }
+
+        [JsonProperty("db_p_total_totalhs")]
+        public long DbPTotalTotalHs { get; set; }
+
+        [JsonProperty("db_p_NA_currentmmr")]
+        public long DbPNaCurrentMmr { get; set; }
+
+        [JsonProperty("db_p_EU_currentmmr")]
+        public long DbPEuCurrentMmr { get; set; }
+
+        [JsonProperty("db_p_AS_currentmmr")]
+        public object DbPAsCurrentMmr { get; set; }
+
+        [JsonProperty("NA_mmrchange")]
+        public long NaMmrChange { get; set; }
+
+        [JsonProperty("EU_mmrchange")]
+        public long EuMmrChange { get; set; }
+
+        [JsonProperty("AS_mmrchange")]
+        public object AsMmrChange { get; set; }
     }
 
-    public class Match
+    public partial class Social
     {
-        public string ranked_wlstatus { get; set; }
-        public string ranked_winslost { get; set; }
-        public string ranked_datatime { get; set; }
-        public string next { get; set; }
-        public int db_p_total_casualwins { get; set; }
-        public int db_p_total_casuallosses { get; set; }
-        public int db_p_total_casualkills { get; set; }
-        public int db_p_total_casualdeaths { get; set; }
-        public int db_p_total_rankedwins { get; set; }
-        public int db_p_total_rankedlosses { get; set; }
-        public int db_p_total_rankedkills { get; set; }
-        public int db_p_total_rankeddeaths { get; set; }
-        public int db_p_total_totalhs { get; set; }
-        public string db_p_NA_currentmmr { get; set; }
-        public string db_p_EU_currentmmr { get; set; }
-        public object db_p_AS_currentmmr { get; set; }
-        public int NA_mmrchange { get; set; }
-        public int? EU_mmrchange { get; set; }
-        public object AS_mmrchange { get; set; }
+        [JsonProperty("twitter")]
+        public string Twitter { get; set; }
+
+        [JsonProperty("instagram")]
+        public string Instagram { get; set; }
+
+        [JsonProperty("twitch")]
+        public string Twitch { get; set; }
+
+        [JsonProperty("youtube")]
+        public Uri Youtube { get; set; }
+
+        [JsonProperty("bio")]
+        public string Bio { get; set; }
+
+        [JsonProperty("esl")]
+        public Uri Esl { get; set; }
+
+        [JsonProperty("discord")]
+        public Uri Discord { get; set; }
+
+        [JsonProperty("background")]
+        public Uri Background { get; set; }
+
+        [JsonProperty("aliases")]
+        public long Aliases { get; set; }
+
+        [JsonProperty("embed")]
+        public string Embed { get; set; }
     }
 }
