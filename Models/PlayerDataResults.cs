@@ -5,28 +5,72 @@ namespace R6Tab.NET.Models
 {
     public class PlayerDataResults
     {
-        public bool playerfound { get; set; }
-        public Social social { get; set; }
-        public List<Match> matches { get; set; }
-        public string graph_NA_mmr_get { get; set; }
-        public string graph_EU_mmr_get { get; set; }
-        public string graph_AS_mmr_get { get; set; }
-        public string graph_casualkds_get { get; set; }
-        public string graph_rankedkds_get { get; set; }
-        public string p_id { get; set; }
-        public string p_name { get; set; }
-        public string p_user { get; set; }
-        public string p_level { get; set; }
-        public string p_platform { get; set; }
-        public string p_pvtrank { get; set; }
-        public string utime { get; set; }
-        public string kd { get; set; }
-        public string p_data { get; set; }
-        public string p_visitors { get; set; }
-        public string p_currentrank { get; set; }
-        public string p_currentmmr { get; set; }
-        public string p_maxrank { get; set; }
-        public string p_maxmmr { get; set; }
+        [JsonProperty("playerfound")]
+        public bool PlayerFound { get; set; }
+
+        [JsonProperty("social")]
+        public Social Social { get; set; }
+
+        [JsonProperty("matches")]
+        public List<Match> Matches { get; set; }
+
+        [JsonProperty("graph_NA_mmr_get")]
+        public string Graph_Na_Mmr { get; set; }
+
+        [JsonProperty("graph_EU_mmr_get")]
+        public string Graph_Eu_Mmr { get; set; }
+
+        [JsonProperty("graph_AS_mmr_get")]
+        public string Graph_As_Mmr { get; set; }
+
+        [JsonProperty("graph_casualkds_get")]
+        public string Graph_Casualkds { get; set; }
+
+        [JsonProperty("graph_rankedkds_get")]
+        public string Graph_Rankedkds { get; set; }
+
+        [JsonProperty("p_id")]
+        public string PlayerId { get; set; }
+
+        [JsonProperty("p_name")]
+        public string PlayerName { get; set; }
+
+        [JsonProperty("p_user")]
+        public string UserId { get; set; }
+
+        [JsonProperty("p_level")]
+        public string PlayerLevel { get; set; }
+
+        [JsonProperty("p_platform")]
+        public string PlayerPlatform { get; set; }
+
+        [JsonProperty("p_pvtrank")]
+        public string PlayerPvtRank { get; set; }
+
+        [JsonProperty("utime")]
+        public string UTime { get; set; }
+
+        [JsonProperty("kd")]
+        public string Kd { get; set; }
+
+        [JsonProperty("p_data")]
+        public string PlayerData { get; set; }
+
+        [JsonProperty("p_visitors")]
+        public string PlayerVisitors { get; set; }
+
+        [JsonProperty("p_currentrank")]
+        public string PlayerCurrentRank { get; set; }
+
+        [JsonProperty("p_currentmmr")]
+        public string PlayerCurrentMmr { get; set; }
+
+        [JsonProperty("p_maxrank")]
+        public string PlayerMaxRank { get; set; }
+
+        [JsonProperty("p_maxmmr")]
+        public string PlayerMaxMmr { get; set; }
+
         public string p_skillrating { get; set; }
         public string thunt { get; set; }
         public string p_headshotacc { get; set; }
