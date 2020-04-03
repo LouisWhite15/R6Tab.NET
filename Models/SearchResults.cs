@@ -17,7 +17,7 @@ namespace R6Tab.NET.Models
         public string Requested { get; set; }
 
         [JsonProperty("players")]
-        public Dictionary<Guid, Player> Players { get; set; }
+        public Dictionary<string, Player> Players { get; set; }
 
     }
 
