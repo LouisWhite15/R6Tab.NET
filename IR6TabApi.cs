@@ -6,8 +6,6 @@ namespace R6Tab.NET
 {
     public interface IR6TabApi
     {
-        Task<SearchResults> GetPlayerByNameAndPlatform(string playerName, Platform platform);
-
-        Task<PlayerDataResults> GetPlayerById(Guid playerId);
+        Task<SearchResults> SearchByName(string playerName, Platform platform);
     }
 }
