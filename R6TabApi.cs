@@ -28,5 +28,18 @@ namespace R6Tab.NET
 
             return JsonConvert.DeserializeObject<SearchResults>(content);
         }
+
+        public async Task<PlayerData> SearchById(Guid playerId)
+        {
+            var requestUrl = Constants.API_URL_PLAYER + "/" + playerId.ToString();
+
+            var response = await _httpClient.GetAsync(requestUrl);
+
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<PlayerData>(content);
+        }
     }
 }
