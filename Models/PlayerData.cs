@@ -13,6 +13,12 @@ namespace R6Tab.NET.Models
 
         [JsonProperty("ranked")]
         public RankedDetails Ranked { get; set; }
+
+        [JsonProperty("refresh")]
+        public RefreshDetails Refresh { get; set; }
+
+        [JsonProperty("stats")]
+        public StatDetails Stats { get; set; }
     }
 
     public class PlayerDetails
@@ -76,5 +82,38 @@ namespace R6Tab.NET.Models
 
         [JsonProperty("AS_maxrankname")]
         public string AsiaMaxRankName { get; set; }
+
+        [JsonProperty("AS_matches")]
+        public int AsiaMatches { get; set; }
+
+        [JsonProperty("AS_killpermatch")]
+        public decimal AsiaKillsPerMatch { get; set; }
+
+        [JsonProperty("AS_deathspermatch")]
+        public decimal AsiaDeathsPerMatch { get; set; }
+    }
+
+    public class RefreshDetails
+    {
+        [JsonProperty("queued")]
+        public bool Queued { get; set; }
+
+        [JsonProperty("possible")]
+        public bool Possible { get; set; }
+
+        [JsonProperty("qtime")]
+        public int QTime { get; set; }
+
+        [JsonProperty("utime")]
+        public int UTime { get; set; }
+
+        [JsonProperty("status")]
+        public int Status { get; set; }
+    }
+
+    public class StatDetails
+    {
+        [JsonProperty("level")]
+        public short Level { get; set; }
     }
 }
