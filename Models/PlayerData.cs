@@ -127,12 +127,12 @@ namespace R6Tab.NET.Models
         public string SeasonName { get; set; }
 
         [JsonProperty("maxrank")]
-        public int MaxRank { get; set; }
+        public int? MaxRank { get; set; }
 
         [JsonProperty("maxrankname")]
         public string MaxRankName { get; set; }
 
         [JsonProperty("maxmmr")]
-        public int MaxMmr { get; set; }
+        public int? MaxMmr { get; set; }
     }
 }
