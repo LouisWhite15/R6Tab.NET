@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace R6Tab.NET.Models
@@ -21,7 +22,7 @@ namespace R6Tab.NET.Models
         public StatDetails Stats { get; set; }
 
         [JsonProperty("seasons")]
-        public SeasonDetails Seasons { get; set; }
+        public Dictionary<string, SeasonDetails> Seasons { get; set; }
     }
 
     public class PlayerDetails
