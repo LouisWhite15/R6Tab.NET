@@ -19,6 +19,9 @@ namespace R6Tab.NET.Models
 
         [JsonProperty("stats")]
         public StatDetails Stats { get; set; }
+
+        [JsonProperty("seasons")]
+        public SeasonDetails Seasons { get; set; }
     }
 
     public class PlayerDetails
@@ -115,5 +118,20 @@ namespace R6Tab.NET.Models
     {
         [JsonProperty("level")]
         public short Level { get; set; }
+    }
+
+    public class SeasonDetails
+    {
+        [JsonProperty("seasonname")]
+        public string SeasonName { get; set; }
+
+        [JsonProperty("maxrank")]
+        public int MaxRank { get; set; }
+
+        [JsonProperty("maxrankname")]
+        public string MaxRankName { get; set; }
+
+        [JsonProperty("maxmmr")]
+        public int MaxMmr { get; set; }
     }
 }
