@@ -170,5 +170,8 @@ namespace R6Tab.NET.Models
 
         [JsonProperty("headshot_accuracy")]
         public string HeadshotAccuracy { get; set; }
+
+        [JsonProperty("AS_mmrchange")]
+        public string AsiaMmrChange { get; set; }
     }
 }
