@@ -23,6 +23,9 @@ namespace R6Tab.NET.Models
 
         [JsonProperty("seasons")]
         public Dictionary<string, SeasonDetails> Seasons { get; set; }
+
+        [JsonProperty("history")]
+        public Dictionary<string, Match> MatchHistory { get; set; }
     }
 
     public class PlayerDetails
@@ -134,5 +137,38 @@ namespace R6Tab.NET.Models
 
         [JsonProperty("maxmmr")]
         public int? MaxMmr { get; set; }
+    }
+
+    public class Match
+    {
+        [JsonProperty("started")]
+        public int Started { get; set; }
+
+        [JsonProperty("ended")]
+        public int Ended { get; set; }
+
+        [JsonProperty("date")]
+        public string Date { get; set; }
+
+        [JsonProperty("ranked_wins")]
+        public int RankedWins { get; set; }
+
+        [JsonProperty("ranked_losses")]
+        public int RankedLosses { get; set; }
+
+        [JsonProperty("ranked_matches")]
+        public int RankedMatches { get; set; }
+
+        [JsonProperty("ranked_kills")]
+        public int RankedKills { get; set; }
+
+        [JsonProperty("ranked_deaths")]
+        public int RankedDeaths { get; set; }
+
+        [JsonProperty("ranked_kd")]
+        public string RankedKd { get; set; }
+
+        [JsonProperty("headshot_accuracy")]
+        public string HeadshotAccuracy { get; set; }
     }
 }
