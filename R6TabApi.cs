@@ -41,5 +41,13 @@ namespace R6Tab.NET
 
             return JsonConvert.DeserializeObject<PlayerData>(content);
         }
+
+        public async Task UpdatePlayerDataById(Guid playerId, string apiKey)
+        {
+            var requestUrl = Constants.API_URL_UPDATE + playerId.ToString() + Constants.API_KEY_PARAM + apiKey;
+
+            var response = await _httpClient.GetAsync(requestUrl);
+            response.EnsureSuccessStatusCode();
+        }
     }
 }

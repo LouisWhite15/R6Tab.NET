@@ -9,5 +9,6 @@ namespace R6Tab.NET
         Task<SearchResults> SearchByName(string playerName, Platform platform, string apiKey);
 
         Task<PlayerData> SearchById(Guid playerId, string apiKey);
+        Task UpdatePlayerDataById(Guid playerId, string apiKey);
     }
 }
