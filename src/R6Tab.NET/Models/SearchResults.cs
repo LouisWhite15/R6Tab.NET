@@ -75,7 +75,7 @@ namespace R6Tab.NET.Models
         public decimal Kd { get; set; }
 
         [JsonProperty("mmr")]
-        public short Mmr { get; set; }
+        public short? Mmr { get; set; }
 
         [JsonProperty("rank")]
         public byte Rank { get; set; }
