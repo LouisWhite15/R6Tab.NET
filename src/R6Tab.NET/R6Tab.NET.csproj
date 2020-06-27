@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http.Formatting">

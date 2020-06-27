@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using R6Tab.NET.Extensions;
 using R6Tab.NET.Models;
 
 namespace R6Tab.NET
@@ -12,13 +13,15 @@ namespace R6Tab.NET
 
         public R6TabApi()
         {
-            _httpClient = HttpClientFactory.Create();
-            _httpClient.BaseAddress = new Uri(Constants.API_BASE_URL);
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri(Constants.API_BASE_URL)
+            };
         }
 
         public async Task<SearchResults> SearchByName(string playerName, Platform platform, string apiKey)
         {
-            var requestUrl = Constants.API_URL_SEARCH + platform.ToString() + "/" + playerName + Constants.API_KEY_PARAM + apiKey;
+            var requestUrl = $"{Constants.API_URL_SEARCH}{platform}/{playerName}".AddApiKey(apiKey);
 
             var response = await _httpClient.GetAsync(requestUrl);
 
@@ -31,7 +34,7 @@ namespace R6Tab.NET
 
         public async Task<PlayerData> SearchById(Guid playerId, string apiKey)
         {
-            var requestUrl = Constants.API_URL_PLAYER + playerId.ToString() + Constants.API_KEY_PARAM + apiKey;
+            var requestUrl = $"{Constants.API_URL_PLAYER}{playerId}".AddApiKey(apiKey);
 
             var response = await _httpClient.GetAsync(requestUrl);
 
@@ -44,7 +47,7 @@ namespace R6Tab.NET
 
         public async Task UpdatePlayerDataById(Guid playerId, string apiKey)
         {
-            var requestUrl = Constants.API_URL_UPDATE + playerId.ToString() + Constants.API_KEY_PARAM + apiKey;
+            var requestUrl = $"{Constants.API_URL_UPDATE}{playerId}".AddApiKey(apiKey);
 
             var response = await _httpClient.GetAsync(requestUrl);
             response.EnsureSuccessStatusCode();
