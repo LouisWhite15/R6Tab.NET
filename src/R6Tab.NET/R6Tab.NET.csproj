@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>R6Tab.NET</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Louis White</Authors>
+    <PackageDescription>C# wrapper for R6Tab.NET</PackageDescription>
+    <RepositoryUrl>https://github.com/LouisWhite15/R6Tab.NET</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
