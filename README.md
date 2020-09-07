@@ -1,7 +1,7 @@
 # R6Tab.NET
 
 ![Publish to NuGet](https://github.com/LouisWhite15/R6Tab.NET/workflows/Publish%20to%20nuget/badge.svg)
-![nuget](https://img.shields.io/nuget/v/R6Tab.NET.Api?color=light%20green?url=https://www.nuget.org/packages/R6Tab.NET.Api)
+[![NuGet](https://img.shields.io/nuget/v/R6Tab.NET.Api?color=light%20green)](https://www.nuget.org/packages/R6Tab.NET.Api)
 
 R6Tab.NET is a C# wrapper for the R6Tab API.
 
