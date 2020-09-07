@@ -25,13 +25,13 @@ jobs:
       - uses: actions/setup-dotnet@v1
         name: Setup dotnet
         with: 
-          dotnet_version: 3.1.x
+          dotnet-version: 3.1.x
       
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore src/R6Tab.NET/R6Tab.NET.csproj
       
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build src/R6Tab.NET/R6Tab.NET.csproj --configuration Release --no-restore
 
       - uses: brandedoutcast/publish-nuget@v2.5.5
         name: Publish NuGet
