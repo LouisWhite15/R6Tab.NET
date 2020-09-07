@@ -45,59 +45,59 @@ namespace R6Tab.NET.Models
 
     public class RankedDetails
     {
-        [JsonProperty("AS_kills")]
-        public int AsiaKills { get; set; }
+        [JsonProperty("allkills")]
+        public int Kills { get; set; }
 
-        [JsonProperty("AS_deaths")]
-        public int AsiaDeaths { get; set; }
+        [JsonProperty("alldeaths")]
+        public int Deaths { get; set; }
 
-        [JsonProperty("AS_wins")]
-        public int AsiaWins { get; set; }
+        [JsonProperty("allwins")]
+        public int Wins { get; set; }
 
-        [JsonProperty("AS_losses")]
-        public int AsiaLosses { get; set; }
+        [JsonProperty("alllosses")]
+        public int Losses { get; set; }
 
-        [JsonProperty("AS_abandons")]
-        public int AsiaAbandons { get; set; }
+        [JsonProperty("allabandons")]
+        public int Abandons { get; set; }
 
-        [JsonProperty("AS_mmr")]
-        public short AsiaMmr { get; set; }
+        [JsonProperty("mmr")]
+        public short Mmr { get; set; }
 
-        [JsonProperty("AS_maxmmr")]
-        public short AsiaMaxMmr { get; set; }
+        [JsonProperty("allmaxmmr")]
+        public short MaxMmr { get; set; }
 
-        [JsonProperty("AS_champ")]
-        public int AsiaChamp { get; set; }
+        [JsonProperty("allchamp")]
+        public int Champ { get; set; }
 
-        [JsonProperty("AS_mmrchange")]
-        public int AsiaMmrChange { get; set; }
+        [JsonProperty("best_mmrchange")]
+        public int MmrChange { get; set; }
 
-        [JsonProperty("AS_wl")]
-        public string AsiaWinLossPercentage { get; set; }
+        [JsonProperty("allwl")]
+        public string WinLossPercentage { get; set; }
 
-        [JsonProperty("AS_kd")]
-        public string AsiaKd { get; set; }
+        [JsonProperty("allkd")]
+        public string Kd { get; set; }
 
-        [JsonProperty("AS_rank")]
-        public byte AsiaRank { get; set; }
+        [JsonProperty("rank")]
+        public byte Rank { get; set; }
 
-        [JsonProperty("AS_rankname")]
-        public string AsiaRankName { get; set; }
+        [JsonProperty("rankname")]
+        public string RankName { get; set; }
 
-        [JsonProperty("AS_maxrank")]
-        public byte AsiaMaxRank { get; set; }
+        [JsonProperty("maxrank")]
+        public byte MaxRank { get; set; }
 
-        [JsonProperty("AS_maxrankname")]
-        public string AsiaMaxRankName { get; set; }
+        [JsonProperty("maxrankname")]
+        public string MaxRankName { get; set; }
 
-        [JsonProperty("AS_matches")]
-        public int AsiaMatches { get; set; }
+        [JsonProperty("allmatches")]
+        public int Matches { get; set; }
 
-        [JsonProperty("AS_killpermatch")]
-        public decimal AsiaKillsPerMatch { get; set; }
+        [JsonProperty("killpermatch")]
+        public decimal KillsPerMatch { get; set; }
 
-        [JsonProperty("AS_deathspermatch")]
-        public decimal AsiaDeathsPerMatch { get; set; }
+        [JsonProperty("deathspermatch")]
+        public decimal DeathsPerMatch { get; set; }
     }
 
     public class RefreshDetails
