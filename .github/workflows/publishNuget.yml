@@ -23,7 +23,7 @@ jobs:
         name: Publish NuGet
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: src/R6Tab.NET
+          PROJECT_FILE_PATH: src/R6Tab.NET/R6Tab.NET.csproj
           # NuGet package id, used for version detection & defaults to project name
           PACKAGE_NAME: R6Tab.NET.Api
           # API key to authenticate with NuGet server
