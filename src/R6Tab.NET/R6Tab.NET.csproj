@@ -4,7 +4,7 @@
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>R6Tab.NET.Api</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Louis White</Authors>
     <PackageDescription>C# wrapper for R6Tab.NET API</PackageDescription>
     <RepositoryUrl>https://github.com/LouisWhite15/R6Tab.NET</RepositoryUrl>

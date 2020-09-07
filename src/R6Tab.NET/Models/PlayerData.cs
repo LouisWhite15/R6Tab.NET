@@ -63,7 +63,7 @@ namespace R6Tab.NET.Models
         [JsonProperty("mmr")]
         public short Mmr { get; set; }
 
-        [JsonProperty("allmaxmmr")]
+        [JsonProperty("maxmmr")]
         public short MaxMmr { get; set; }
 
         [JsonProperty("allchamp")]
