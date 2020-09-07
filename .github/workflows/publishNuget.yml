@@ -19,6 +19,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      
+      - uses: actions/setup-dotnet@v1
+        name: Setup dotnet
+        with: 
+          dotnet_version: 3.1.x
+      
+      - name: Install dependencies
+        run: dotnet restore
+      
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
       - uses: brandedoutcast/publish-nuget@v2.5.5
         name: Publish NuGet
         with:
